@@ -4,6 +4,51 @@
 #include <vector>
 
 
+class QuickUnionWeightedUF {
+ private:
+    int *id;
+    int *sz;
+    int id_len;
+
+    // fetches the root id by following id[i] up and compresses path
+    int root(int i) {
+        while(i != id[i]) {
+            id[i] = id[id[i]];
+            i = id[i];
+        }
+        return i;
+    }
+ public:
+    QuickUnionWeightedUF(int N) {
+        id = new int[N];
+        sz = new int[N];
+
+        id_len = N;
+        for (int i = 0; i < N; i++) {
+            id[i] = i;
+            sz[i] = 1;
+        }
+    }
+
+    bool connected(int p, int q) {
+        return root(p) == root(q);
+    }
+
+    void s_union(int p, int q) {
+        int i = root(p);
+        int j = root(q);
+        if (i == j) return;
+        if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
+        else               { id[j] = i; sz[i] += sz[j]; }
+    }
+
+    void show() {
+        for (int i=0; i<id_len; i++) {
+            printf("%d: %d\n", i, id[i]);
+        }
+    }
+};
+
 class QuickUnionUF {
  private:
     int *id;
@@ -83,7 +128,8 @@ int main() {
     cout << "Enter number of objects: ";
     cin >> N;
 
-    QuickFindUF *qf = new QuickFindUF(N);
+    //QuickFindUF *qf = new QuickFindUF(N);
+    QuickUnionWeightedUF *qf = new QuickUnionWeightedUF(N);
 
     getline(cin, line);
 
