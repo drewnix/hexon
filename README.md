@@ -1,8 +1,8 @@
-# Data Structures, Algorithms, Architectures and Design Patterns
+# dsapa 
+### Data Structures, Algorithms, Patterns & Architectures
 
 Experimentation space for learning and keeping knowledge
 
-* indexes -> contains indexes of learning & practice sources
-* data_structures_and_algorithms -> data structures & algorithms
-* architectures -> system designs and architectures
-* design_patterns -> collection of design patterns
+* guides -> contains indexes of learning & practice sources
+* dsapa/dsa -> data structures & algorithms
+* dsapa/architectures -> system designs and architectures
