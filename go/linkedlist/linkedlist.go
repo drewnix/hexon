@@ -15,27 +15,36 @@ type linkedList struct {
 
 var linked linkedList
 
-func (ll *linkedList) insert(value int) *node {
-	h := ll.head
+func (l *linkedList) insert(value int) *node {
+	h := l.head
 	n := node{h, nil, value}
-	ll.head = &n
+	l.head = &n
 	return &n
 }
 
-func (ll *linkedList) display() {
-	n := ll.head
+func (l *linkedList) display() {
+	n := l.head
 	for n != nil {
-		fmt.Printf("%d --> ", n.value)
+		fmt.Printf("%d", n.value)
 		n = n.next
+		if n != nil {
+			fmt.Printf(" --> ")
+		}
 	}
+	fmt.Printf("\n")
 }
 
-func (ll *linkedList) reverse() {
-	n := ll.head
-	for n != nil {
+func (l *linkedList) reverse() {
+	curr := l.head
+	var prev *node = nil
 
+	for curr != nil {
+		next := curr.next
+		curr.next = prev
+		prev = curr
+		curr = next
 	}
-
+	l.head = prev
 }
 
 func main() {
@@ -43,6 +52,7 @@ func main() {
 	linked.insert(12)
 	linked.insert(111)
 	linked.display()
-
+	linked.reverse()
+	linked.display()
 }
 
