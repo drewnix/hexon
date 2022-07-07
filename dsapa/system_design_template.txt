@@ -1,0 +1,39 @@
+
+
+# Requirements scope
+
+Functional:
+* User
+
+Non-functional:
+* Scale
+* Perf
+* Cost
+* Security
+* Observability / Monitoring
+* Deployment / CI-CD
+
+# Trade-offs
+# Conceptual Design
+ * Components
+    * Connections
+    * Responsibilities
+
+# Architecture
+* Database
+* Cache
+* Web server
+* API
+* Proxy or Reverse Proxy
+* Load balancer
+* Availability Zones / Regions
+
+# Technical Design
+* API Design
+* DB Schema
+* Pseudo code for specific components
+
+# Data model/schema
+# Back-of-the-envelope calculations
+# Reference links
+# Link to whiteboard or diagram such as https://sketchboard.me/new
