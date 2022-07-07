@@ -38,3 +38,23 @@ def list_from_array(ary: List[int]):
         curr = curr.next
 
     return head.next
+
+
+def list_from_array_with_cycle(ary: List[int], cycle_pos):
+    # assumption is cycle exists at last node
+    head = ListNode()
+    curr = head
+    cycle_node = None
+
+    for i in range(len(ary)):
+        node = ListNode(val=ary[i])
+        if i == cycle_pos:
+            cycle_node = node
+        curr.next = node
+        curr = curr.next
+
+    if cycle_node is not None:
+        # create our cycle
+        curr.next = cycle_node
+
+    return head.next

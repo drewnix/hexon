@@ -6,7 +6,7 @@
 """
 
 
-from dsapa.dsa.linked_lists.linked_list_utils import ListNode, validate_list, list_from_array, display_list
+from dsapa.utils.linked_list import ListNode, validate_list, list_from_array, display_list
 from typing import Optional
 
 
