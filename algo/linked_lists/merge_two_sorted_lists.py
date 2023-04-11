@@ -45,7 +45,7 @@ list2.next =
 # [1]->[2]->[4]->[5]->[8]
 #
 # curr = [1]
-from dsapa.utils.linked_list import ListNode, validate_list, list_from_array, display_list
+from algo.utils.linked_list import ListNode, validate_list, list_from_array, display_list
 
 
 class Solution:

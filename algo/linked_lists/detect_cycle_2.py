@@ -13,7 +13,7 @@ seen = []
 """
 
 
-from dsapa.utils.linked_list import (
+from algo.utils.linked_list import (
     ListNode, list_from_array_with_cycle, list_from_array
 )
 from typing import Optional

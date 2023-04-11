@@ -17,7 +17,7 @@ ary=
 """
 
 
-from dsapa.utils.linked_list import ListNode, validate_list, list_from_array, display_list
+from algo.utils.linked_list import ListNode, validate_list, list_from_array, display_list
 from typing import Optional
 
 
