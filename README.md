@@ -1,4 +1,3 @@
-# algo 
-### Data Structures & Algorithms
+# Hexon 
 
-Experimentation space for learning and keeping knowledge
+Experimental data structures and algorithms space

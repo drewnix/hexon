@@ -1,13 +1,12 @@
 [tool.poetry]
-name = "algo"
+name = "hexon"
 version = "0.1.0"
 description = "Data Structures, Algorithms, Patterns and Architectures"
 authors = ["Andrew Tanner <andrew@drewnix.dev>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.12.1"
 pytest = "^7.1.2"
-line-profiler = "^3.5.1"
 pptree = "^3.1"
 cookiecutter = "^2.1.1"
 
