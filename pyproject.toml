@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexon"
 version = "0.1.0"
-description = "Data Structures, Algorithms, Patterns and Architectures"
+description = "Hexon AI Tutor"
 authors = ["Andrew Tanner <andrew@drewnix.dev>"]
 
 [tool.poetry.dependencies]
@@ -9,9 +9,63 @@ python = "^3.12.1"
 pytest = "^7.1.2"
 pptree = "^3.1"
 cookiecutter = "^2.1.1"
+uvicorn = "^0.24.0.post1"
+fastapi = "^0.105.0"
+pydantic = "^2.5.2"
+pydantic-settings = "^2.1.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+mypy = "^1.7.1"
+isort = "^5.13.2"
+flake8 = "^6.1.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+poethepoet = "^0.24.4"
+
+[tool.black]
+line-length = "120"
+
+[tool.isort]
+line_length = "120"
+profile = "black"
+
+[tool.flake8]
+max-line-length = "120"
+inline-quotes = "double"
+extend-exclude = ".venv"
+extend-ignore = ["PL123"]
+per-file-ignores = [
+    "__init__.py:F401"
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --junitxml=pytest.xml --doctest-modules"
+python_files = "test_*.py"
+log_level = "DEBUG"
+
+[tool.coverage.run]
+branch = "true"
+omit = ["test_*.py"]
+command_line = "-m pytest"
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.xml]
+output = "cov.xml"
+
+[[tool.mypy.overrides]]
+module="emails.*"
+ignore_missing_imports = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+format = { shell = "isort src && black src && flake8 src && mypy src" }
+check = { shell = "isort --check src && black --check src && flake8 src && mypy src" }
+run = { shell = "poetry run uvicorn hexon.main:hexon --reload" }
+
