@@ -14,19 +14,23 @@ import {
 } from "@/components/ui/card"
 
 export interface FlashCardProps {
-    title?: string;
-    description?: string;
-    answer?: string;
-    difficulty?: string;
-    topic?: string;
+    topic: string;
 }
 
-function FlashCard({title, description, answer, topic = "default"}: FlashCardProps) {
-    const [flashcard, setFlashcard] = useState({ title, description, answer, topic });
+interface Flashcard {
+    title: string;
+    description: string;
+    answer: string;
+    topic: string;
+}
+
+function FlashCard({ topic }: FlashCardProps) {
+    const [flashcard, setFlashcard] = useState<Flashcard | null>(null);
     const [isFlipped, setIsFlipped] = useState(false);
     const [isLoading, setIsLoading] = useState(false); // New state to track loading
 
     const fetchFlashcard = async () => {
+        if (!topic) return; // Guard clause if topic is not provided
         setIsLoading(true); // Start loading
 
         try {
@@ -44,7 +48,7 @@ function FlashCard({title, description, answer, topic = "default"}: FlashCardPro
         fetchFlashcard();
     }, [topic]); // Fetch a new card when the topic changes
 
-    if (!flashcard) {
+    if (isLoading || !flashcard) {
         return <div>Loading...</div>;
     }
 

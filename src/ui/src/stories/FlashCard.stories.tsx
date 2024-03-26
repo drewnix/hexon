@@ -13,37 +13,25 @@ export default meta;
 export const Default = () => (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <FlashCard
-            title="Sample Question"
             topic="Hodgepodge"
-            description="What is 2 + 2?"
-            answer="The answer is 4."
         />
     </ThemeProvider>
 );
 
 export const Mathematics = () => (
     <FlashCard
-        title="Math Question"
         topic="Problems"
-        description="What is the square root of 16?"
-        answer="The answer is 4."
     />
 );
 
 export const Geography = () => (
     <FlashCard
-        title="Geography Question"
-        topic={"Country capitals"}
-        description="What is the capital of France?"
-        answer="The answer is Paris."
+        topic={"Geography"}
     />
 );
 
 export const History = () => (
     <FlashCard
-        title="History Question"
         topic="US Presidents"
-        description="Who was the first President of the United States?"
-        answer="The answer is George Washington."
     />
 );

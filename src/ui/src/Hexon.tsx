@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle.tsx";
 import FlashCard from "@/components/flashcard.tsx";
 import {TopicSelect} from "@/components/topic-select.tsx";
 
 function Hexon() {
+    const [selectedTopic, setSelectedTopic] = useState("");
+
     return (
         <div className="bg-background flex flex-col justify-center items-center pt-20">
             <div className="w-full border-2 max-w-3xl mb-8 mx-auto p-6 bg-card rounded-md shadow relative">
@@ -16,11 +19,9 @@ function Hexon() {
                     Select an existing topic or have Trivia GPT create one.
                 </p>
                 <br/>
-                <TopicSelect/>
-
+                <TopicSelect selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
             </div>
-
-            <FlashCard/>
+            <FlashCard topic={selectedTopic}/>
         </div>
     )
 }
