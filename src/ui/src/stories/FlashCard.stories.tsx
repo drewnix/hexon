@@ -14,7 +14,7 @@ export const Default = () => (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <FlashCard
             title="Sample Question"
-            subtitle="Example"
+            topic="Hodgepodge"
             description="What is 2 + 2?"
             answer="The answer is 4."
         />
@@ -24,7 +24,7 @@ export const Default = () => (
 export const Mathematics = () => (
     <FlashCard
         title="Math Question"
-        subtitle="Problems"
+        topic="Problems"
         description="What is the square root of 16?"
         answer="The answer is 4."
     />
@@ -33,7 +33,7 @@ export const Mathematics = () => (
 export const Geography = () => (
     <FlashCard
         title="Geography Question"
-        subtitle={"Country capitals"}
+        topic={"Country capitals"}
         description="What is the capital of France?"
         answer="The answer is Paris."
     />
@@ -42,7 +42,7 @@ export const Geography = () => (
 export const History = () => (
     <FlashCard
         title="History Question"
-        subtitle="US Presidents"
+        topic="US Presidents"
         description="Who was the first President of the United States?"
         answer="The answer is George Washington."
     />

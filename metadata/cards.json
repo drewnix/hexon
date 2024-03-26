@@ -1,0 +1,709 @@
+[
+  {
+    "topic": "Literature",
+    "title": "Shakespeare's Couples",
+    "description": "Who are the star-crossed lovers in William Shakespeare's play Romeo and Juliet?",
+    "difficulty": "easy",
+    "answer": "Romeo and Juliet"
+  },
+  {
+    "topic": "Science",
+    "title": "Elemental Discovery",
+    "description": "Which element with the atomic number 79 is known for its yellow luster and is historically used in currency and jewelry?",
+    "difficulty": "easy",
+    "answer": "Gold"
+  },
+  {
+    "topic": "Music",
+    "title": "The King of Pop",
+    "description": "Which artist is famously known as the 'King of Pop'?",
+    "difficulty": "easy",
+    "answer": "Michael Jackson"
+  },
+  {
+    "topic": "History",
+    "title": "Great Emancipator",
+    "description": "Which U.S. President is known as the 'Great Emancipator' for his role in abolishing slavery?",
+    "difficulty": "easy",
+    "answer": "Abraham Lincoln"
+  },
+  {
+    "topic": "Technology",
+    "title": "Internet Beginnings",
+    "description": "What was the name of the first ever web browser, invented in 1990 by Tim Berners-Lee?",
+    "difficulty": "medium",
+    "answer": "WorldWideWeb"
+  },
+  {
+    "topic": "Art",
+    "title": "Mona Lisa's Home",
+    "description": "In which museum can you find Leonardo da Vinci's 'Mona Lisa'?",
+    "difficulty": "easy",
+    "answer": "The Louvre"
+  },
+  {
+    "topic": "Television",
+    "title": "Sitcom Pioneers",
+    "description": "What popular American television sitcom features characters named Ross, Rachel, Joey, Chandler, Monica, and Phoebe?",
+    "difficulty": "easy",
+    "answer": "Friends"
+  },
+  {
+    "topic": "Movies",
+    "title": "Galactic Franchise",
+    "description": "Which epic space opera film franchise was created by George Lucas?",
+    "difficulty": "easy",
+    "answer": "Star Wars"
+  },
+  {
+    "topic": "Sports",
+    "title": "Olympic Rings",
+    "description": "How many interlaced rings are on the Olympic flag, representing the five continents of the world?",
+    "difficulty": "easy",
+    "answer": "Five"
+  },
+  {
+    "topic": "Cuisine",
+    "title": "Italian Staple",
+    "description": "What is the Italian word for 'squashed' that describes pasta made by cutting sheets of dough into slender ribbons?",
+    "difficulty": "medium",
+    "answer": "Tagliatelle"
+  },
+  {
+    "topic": "Animals",
+    "title": "Majestic Stripes",
+    "description": "What is the largest species of the cat family, known for its pattern of dark vertical stripes on reddish-orange fur?",
+    "difficulty": "easy",
+    "answer": "Tiger"
+  },
+  {
+    "topic": "Astronomy",
+    "title": "Giant Red Spot",
+    "description": "Which planet in our solar system is known for having a persistent high-pressure region in its atmosphere, resulting in an anticyclonic storm known as the Great Red Spot?",
+    "difficulty": "easy",
+    "answer": "Jupiter"
+  },
+  {
+    "topic": "Philosophy",
+    "title": "The Republic's Author",
+    "description": "Who is the ancient Greek philosopher, a student of Socrates, who wrote 'The Republic'?",
+    "difficulty": "medium",
+    "answer": "Plato"
+  },
+  {
+    "topic": "Language",
+    "title": "Romance Language Roots",
+    "description": "Which ancient language is the basis for the Romance languages including Spanish, French, Italian, Portuguese, and Romanian?",
+    "difficulty": "medium",
+    "answer": "Latin"
+  },
+  {
+    "topic": "Mathematics",
+    "title": "Pi Phenomenon",
+    "description": "Pi, the mathematical constant, represents the ratio of a circle's what to its diameter?",
+    "difficulty": "easy",
+    "answer": "Circumference"
+  },
+  {
+    "topic": "Fashion",
+    "title": "Designer Monogram",
+    "description": "Which luxury fashion brand is known for its double 'C' monogram?",
+    "difficulty": "easy",
+    "answer": "Chanel"
+  },
+  {
+    "topic": "Politics",
+    "title": "First Woman Prime Minister",
+    "description": "Who was the first woman to become the Prime Minister of the United Kingdom?",
+    "difficulty": "medium",
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "topic": "Biology",
+    "title": "DNA's Shape",
+    "description": "What is the name of the shape that describes the structure of DNA?",
+    "difficulty": "easy",
+    "answer": "Double helix"
+  },
+  {
+    "topic": "Physics",
+    "title": "E=mc² Explained",
+    "description": "In Einstein's famous equation E=mc², what does 'c' represent?",
+    "difficulty": "medium",
+    "answer": "The speed of light in a vacuum"
+  },
+  {
+    "topic": "Economics",
+    "title": "Invisible Hand",
+    "description": "Which economist is often referred to as the 'Father of Economics' and is known for his theory of the 'invisible hand'?",
+    "difficulty": "medium",
+    "answer": "Adam Smith"
+  },
+  {
+    "topic": "Science",
+    "title": "Periodic Table",
+    "description": "What is the chemical symbol for Gold?",
+    "difficulty": "easy",
+    "answer": "Au"
+  },
+  {
+    "topic": "History",
+    "title": "Ancient Wonders",
+    "description": "Which ancient wonder was a lighthouse located in Alexandria, Egypt?",
+    "difficulty": "medium",
+    "answer": "The Lighthouse of Alexandria"
+  },
+  {
+    "topic": "Entertainment",
+    "title": "Classic Movies",
+    "description": "Which 1942 film starring Humphrey Bogart and Ingrid Bergman is set in the Moroccan city of Casablanca?",
+    "difficulty": "easy",
+    "answer": "Casablanca"
+  },
+  {
+    "topic": "Literature",
+    "title": "Famous Novels",
+    "description": "Who wrote the dystopian novel '1984'?",
+    "difficulty": "easy",
+    "answer": "George Orwell"
+  },
+  {
+    "topic": "Music",
+    "title": "The Beatles",
+    "description": "What was The Beatles' first single in 1962?",
+    "difficulty": "medium",
+    "answer": "Love Me Do"
+  },
+  {
+    "topic": "Technology",
+    "title": "Internet Milestones",
+    "description": "In which year was the domain name system (DNS) introduced?",
+    "difficulty": "hard",
+    "answer": "1983"
+  },
+  {
+    "topic": "Sports",
+    "title": "Olympic Games",
+    "description": "In which city were the first modern Olympic Games held in 1896?",
+    "difficulty": "easy",
+    "answer": "Athens"
+  },
+  {
+    "topic": "Nature",
+    "title": "Birds of Prey",
+    "description": "What is the largest eagle in the world by wingspan?",
+    "difficulty": "medium",
+    "answer": "The Philippine Eagle"
+  },
+  {
+    "topic": "Geography",
+    "title": "Majestic Mountains",
+    "description": "What is the highest mountain in North America?",
+    "difficulty": "medium",
+    "answer": "Denali (Mount McKinley)"
+  },
+  {
+    "topic": "Art",
+    "title": "Renaissance Masterpieces",
+    "description": "Which artist painted the ceiling of the Sistine Chapel?",
+    "difficulty": "easy",
+    "answer": "Michelangelo"
+  },
+  {
+    "topic": "Food and Drink",
+    "title": "International Cuisine",
+    "description": "Sushi is a traditional food from which country?",
+    "difficulty": "easy",
+    "answer": "Japan"
+  },
+  {
+    "topic": "Astronomy",
+    "title": "The Red Planet",
+    "description": "What is the fourth planet from the sun, known for its red appearance?",
+    "difficulty": "easy",
+    "answer": "Mars"
+  },
+  {
+    "topic": "Mathematics",
+    "title": "Number Theory",
+    "description": "What is the smallest prime number?",
+    "difficulty": "easy",
+    "answer": "2"
+  },
+  {
+    "topic": "Language",
+    "title": "Linguistic Roots",
+    "description": "What is the most widely spoken language in the world by number of native speakers?",
+    "difficulty": "medium",
+    "answer": "Mandarin Chinese"
+  },
+  {
+    "topic": "Philosophy",
+    "title": "Philosophers' Quotes",
+    "description": "Who is credited with the phrase 'I think, therefore I am'?",
+    "difficulty": "easy",
+    "answer": "René Descartes"
+  },
+  {
+    "topic": "Biology",
+    "title": "Genetic Material",
+    "description": "What does DNA stand for?",
+    "difficulty": "easy",
+    "answer": "Deoxyribonucleic Acid"
+  },
+  {
+    "topic": "Fashion",
+    "title": "Fashion Icons",
+    "description": "Which fashion designer is known for the creation of the 'Little Black Dress'?",
+    "difficulty": "medium",
+    "answer": "Coco Chanel"
+  },
+  {
+    "topic": "Cinema",
+    "title": "Film Awards",
+    "description": "What movie won the first ever Academy Award for Best Picture in 1929?",
+    "difficulty": "medium",
+    "answer": "Wings"
+  },
+  {
+    "topic": "Politics",
+    "title": "World Leaders",
+    "description": "Who was the first female Prime Minister of the United Kingdom?",
+    "difficulty": "easy",
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "topic": "Space Exploration",
+    "title": "Pioneers of Space",
+    "description": "Who was the first person to walk on the moon?",
+    "difficulty": "easy",
+    "answer": "Neil Armstrong"
+  },
+  {
+    "topic": "Literature",
+    "title": "First Line Intrigue",
+    "description": "Which novel begins with the line 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife'?",
+    "difficulty": "medium",
+    "answer": "Pride and Prejudice"
+  },
+  {
+    "topic": "Science",
+    "title": "Fundamental Forces",
+    "description": "Which fundamental force is responsible for the binding together of protons and neutrons in an atom's nucleus?",
+    "difficulty": "medium",
+    "answer": "The strong nuclear force"
+  },
+  {
+    "topic": "Music",
+    "title": "The Fab Four",
+    "description": "Who was the original drummer for The Beatles, whom Ringo Starr replaced in 1962?",
+    "difficulty": "medium",
+    "answer": "Pete Best"
+  },
+  {
+    "topic": "History",
+    "title": "Roman Emperors",
+    "description": "Which Roman Emperor famously made his horse a senator?",
+    "difficulty": "hard",
+    "answer": "Caligula"
+  },
+  {
+    "topic": "Art",
+    "title": "Mysterious Smile",
+    "description": "In what city is Leonardo da Vinci's masterpiece, the Mona Lisa, displayed?",
+    "difficulty": "medium",
+    "answer": "Paris"
+  },
+  {
+    "topic": "Technology",
+    "title": "Early Computing",
+    "description": "What was the name of the first electronic general-purpose computer, completed in 1946?",
+    "difficulty": "medium",
+    "answer": "ENIAC"
+  },
+  {
+    "topic": "Cinema",
+    "title": "Cinematic Debut",
+    "description": "Which 1994 film marked the directorial debut of Quentin Tarantino?",
+    "difficulty": "medium",
+    "answer": "Reservoir Dogs"
+  },
+  {
+    "topic": "Food and Drink",
+    "title": "Spirits and Spices",
+    "description": "What type of spirit is traditionally used to make a Moscow Mule?",
+    "difficulty": "easy",
+    "answer": "Vodka"
+  },
+  {
+    "topic": "Geography",
+    "title": "Island Nations",
+    "description": "Which country is the world's largest island that is not a continent?",
+    "difficulty": "medium",
+    "answer": "Greenland"
+  },
+  {
+    "topic": "Biology",
+    "title": "Genetic Material",
+    "description": "In biology, what do the letters DNA stand for?",
+    "difficulty": "easy",
+    "answer": "Deoxyribonucleic Acid"
+  },
+  {
+    "topic": "Sports",
+    "title": "The Perfect 10",
+    "description": "Who was the first gymnast to score a perfect 10.0 at the Olympic Games?",
+    "difficulty": "medium",
+    "answer": "Nadia Comăneci"
+  },
+  {
+    "topic": "Astronomy",
+    "title": "Galactic Cannibalism",
+    "description": "What is the name of the nearest major galaxy to the Milky Way?",
+    "difficulty": "hard",
+    "answer": "Andromeda Galaxy"
+  },
+  {
+    "topic": "Mythology",
+    "title": "The King of Gods",
+    "description": "In Greek mythology, who is the king of the gods?",
+    "difficulty": "easy",
+    "answer": "Zeus"
+  },
+  {
+    "topic": "Physics",
+    "title": "Nobel Breakthroughs",
+    "description": "Which physicist won the 1921 Nobel Prize for his explanation of the photoelectric effect?",
+    "difficulty": "medium",
+    "answer": "Albert Einstein"
+  },
+  {
+    "topic": "Philosophy",
+    "title": "Existential Originator",
+    "description": "Who is widely recognized as the father of existentialism?",
+    "difficulty": "hard",
+    "answer": "Søren Kierkegaard"
+  },
+  {
+    "topic": "Language",
+    "title": "The Bard's Influence",
+    "description": "Which English playwright is known for contributing over 1,700 words to the English language?",
+    "difficulty": "medium",
+    "answer": "William Shakespeare"
+  },
+  {
+    "topic": "Environment",
+    "title": "Climate Milestone",
+    "description": "The Keeling Curve, started in 1958, tracks the concentration of what atmospheric gas that is a critical indicator of global climate change?",
+    "difficulty": "medium",
+    "answer": "Carbon Dioxide (CO2)"
+  },
+  {
+    "topic": "Pop Culture",
+    "title": "Fantasy Realms",
+    "description": "What is the name of the fictional continent on which the majority of the action in 'Game of Thrones' takes place?",
+    "difficulty": "medium",
+    "answer": "Westeros"
+  },
+  {
+    "topic": "Medicine",
+    "title": "Medical Breakthrough",
+    "description": "Edward Jenner is famous for developing a vaccine for what disease?",
+    "difficulty": "medium",
+    "answer": "Smallpox"
+  },
+  {
+    "topic": "History",
+    "title": "Ancient Civilizations",
+    "description": "Which ancient civilization built the pyramids of Giza?",
+    "difficulty": "easy",
+    "answer": "The Egyptians"
+  },
+  {
+    "topic": "Science",
+    "title": "Space Exploration",
+    "description": "What was the name of the first artificial Earth satellite?",
+    "difficulty": "easy",
+    "answer": "Sputnik 1"
+  },
+  {
+    "topic": "Literature",
+    "title": "Shakespearean Plays",
+    "description": "In which play did Shakespeare write the line 'To be, or not to be'?",
+    "difficulty": "medium",
+    "answer": "Hamlet"
+  },
+  {
+    "topic": "Music",
+    "title": "Classical Composers",
+    "description": "Which composer became deaf later in his career yet continued to create music?",
+    "difficulty": "medium",
+    "answer": "Ludwig van Beethoven"
+  },
+  {
+    "topic": "Biology",
+    "title": "Human Body",
+    "description": "What is the largest organ in the human body?",
+    "difficulty": "easy",
+    "answer": "The skin"
+  },
+  {
+    "topic": "Sports",
+    "title": "Olympic Games",
+    "description": "Which city hosted the 2016 Summer Olympics?",
+    "difficulty": "easy",
+    "answer": "Rio de Janeiro"
+  },
+  {
+    "topic": "Cinema",
+    "title": "Academy Awards",
+    "description": "What movie won the Oscar for Best Picture in 1994?",
+    "difficulty": "medium",
+    "answer": "Forrest Gump"
+  },
+  {
+    "topic": "Technology",
+    "title": "Internet Milestones",
+    "description": "What was the first message ever sent over the ARPANET, the precursor to the internet?",
+    "difficulty": "hard",
+    "answer": "login"
+  },
+  {
+    "topic": "Geography",
+    "title": "Islands",
+    "description": "Which is the largest island in the Mediterranean Sea?",
+    "difficulty": "medium",
+    "answer": "Sicily"
+  },
+  {
+    "topic": "Language",
+    "title": "Etymology",
+    "description": "What is the origin of the word 'robot'?",
+    "difficulty": "medium",
+    "answer": "Czech"
+  },
+  {
+    "topic": "Food & Drink",
+    "title": "Cuisine",
+    "description": "In which country did the sandwich originate?",
+    "difficulty": "easy",
+    "answer": "England"
+  },
+  {
+    "topic": "Politics",
+    "title": "International Leaders",
+    "description": "Who was the first female Prime Minister of the United Kingdom?",
+    "difficulty": "easy",
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "topic": "Nature",
+    "title": "Wildlife",
+    "description": "What is the fastest land animal in the world?",
+    "difficulty": "easy",
+    "answer": "Cheetah"
+  },
+  {
+    "topic": "Fashion",
+    "title": "Iconic Items",
+    "description": "Which famous fashion designer is credited with popularizing the 'little black dress'?",
+    "difficulty": "medium",
+    "answer": "Coco Chanel"
+  },
+  {
+    "topic": "Physics",
+    "title": "Theories",
+    "description": "Who is known for the theory of relativity?",
+    "difficulty": "easy",
+    "answer": "Albert Einstein"
+  },
+  {
+    "topic": "Economics",
+    "title": "Currency",
+    "description": "What is the currency of Japan?",
+    "difficulty": "easy",
+    "answer": "Yen"
+  },
+  {
+    "topic": "Automotive",
+    "title": "Innovation",
+    "description": "Which company produced the first mass-produced car, the Model T?",
+    "difficulty": "easy",
+    "answer": "Ford Motor Company"
+  },
+  {
+    "topic": "Health",
+    "title": "Vitamins",
+    "description": "Vitamin C is also known by what other name?",
+    "difficulty": "medium",
+    "answer": "Ascorbic Acid"
+  },
+  {
+    "topic": "Entertainment",
+    "title": "Theme Parks",
+    "description": "What is the oldest operating theme park in the world?",
+    "difficulty": "hard",
+    "answer": "Bakken"
+  },
+  {
+    "topic": "hodgepodge",
+    "title": "Capital Cities",
+    "description": "This is the capital city of Egypt.",
+    "difficulty": "easy",
+    "answer": "Cairo"
+  },
+  {
+    "topic": "hodgepodge",
+    "title": "Ancient Civilizations",
+    "description": "This ancient civilization is known for its pyramids and pharaohs.",
+    "difficulty": "medium",
+    "answer": "Egypt"
+  },
+  {
+    "topic": "hodgepodge",
+    "title": "Literary Terms",
+    "description": "This term refers to a story or a tale with animals as characters conveying a moral.",
+    "difficulty": "hard",
+    "answer": "Fable"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Largest Countries",
+    "description": "What country has the largest land area?",
+    "difficulty": "medium",
+    "answer": "Russia"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Physics",
+    "description": "Who is known for the theory of relativity?",
+    "difficulty": "easy",
+    "answer": "Albert Einstein"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Country Flags",
+    "description": "Which country has a flag featuring a red maple leaf?",
+    "difficulty": "easy",
+    "answer": "Canada"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Classic Movies",
+    "description": "Which 1942 film featured the song 'As Time Goes By'?",
+    "difficulty": "medium",
+    "answer": "Casablanca"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Poetry",
+    "description": "Who wrote 'The Raven'?",
+    "difficulty": "medium",
+    "answer": "Edgar Allan Poe"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "World Capitals",
+    "description": "Name the capital city of Australia.",
+    "difficulty": "medium",
+    "answer": "Canberra"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Geographical Records",
+    "description": "Which is the longest river in the world?",
+    "difficulty": "medium",
+    "answer": "The Nile"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Ancient Civilizations",
+    "description": "In which modern-day country was the ancient city of Carthage located?",
+    "difficulty": "medium",
+    "answer": "Tunisia"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "World Leaders",
+    "description": "Who was the first female Prime Minister of the United Kingdom?",
+    "difficulty": "easy",
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Historic Events",
+    "description": "In what year did the fall of the Berlin Wall occur?",
+    "difficulty": "medium",
+    "answer": "1989"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Chemical Elements",
+    "description": "Which element has the chemical symbol 'Au'?",
+    "difficulty": "medium",
+    "answer": "Gold"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Human Body",
+    "description": "What is the largest organ in the human body?",
+    "difficulty": "easy",
+    "answer": "Skin"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Famous Artists",
+    "description": "Who painted the Mona Lisa?",
+    "difficulty": "easy",
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Music Records",
+    "description": "Which band released the album 'Dark Side of the Moon'?",
+    "difficulty": "easy",
+    "answer": "Pink Floyd"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Novels",
+    "description": "Who wrote '1984'?",
+    "difficulty": "easy",
+    "answer": "George Orwell"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Olympic Games",
+    "description": "Which country hosted the 2016 Summer Olympics?",
+    "difficulty": "easy",
+    "answer": "Brazil"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Tennis",
+    "description": "Who has won the most Grand Slam titles in men's singles tennis?",
+    "difficulty": "hard",
+    "answer": "Roger Federer"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Inventions",
+    "description": "Who is credited with inventing the first successful airplane?",
+    "difficulty": "easy",
+    "answer": "Wright brothers"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Internet",
+    "description": "Which technology company owns the search engine Bing?",
+    "difficulty": "easy",
+    "answer": "Microsoft"
+  },
+  {
+    "topic": "Hodgepodge",
+    "title": "Sculpture",
+    "description": "Who created the statue of David?",
+    "difficulty": "medium",
+    "answer": "Michelangelo"
+  }
+]

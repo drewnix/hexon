@@ -1,5 +1,7 @@
 // FlashCard.tsx
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import { getFlashcard } from '../apiService';
+
 
 import {Button} from "@/components/ui/button"
 import {
@@ -12,39 +14,76 @@ import {
 } from "@/components/ui/card"
 
 export interface FlashCardProps {
-    title: string;
-    subtitle: string;
-    description: string;
-    answer: string;
+    title?: string;
+    description?: string;
+    answer?: string;
+    difficulty?: string;
+    topic?: string;
 }
 
-function FlashCard({title, subtitle, description, answer}: FlashCardProps) {
+function FlashCard({title, description, answer, topic = "default"}: FlashCardProps) {
+    const [flashcard, setFlashcard] = useState({ title, description, answer, topic });
     const [isFlipped, setIsFlipped] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); // New state to track loading
 
-    const flipCard = () => setIsFlipped(!isFlipped);
+    const fetchFlashcard = async () => {
+        setIsLoading(true); // Start loading
+
+        try {
+            const data = await getFlashcard(topic);
+            setIsFlipped(false); // Reset flip state here
+            setFlashcard(data);
+        } catch (error) {
+            console.error('Error fetching flashcard:', error);
+        } finally {
+            setIsLoading(false); // End loading
+        }
+    };
+
+    useEffect(() => {
+        fetchFlashcard();
+    }, [topic]); // Fetch a new card when the topic changes
+
+    if (!flashcard) {
+        return <div>Loading...</div>;
+    }
+
+    const flipCard = () => {
+        if (!isLoading) {
+            setIsFlipped(!isFlipped);
+        }
+    };
+
+    const handleNextClick = () => {
+        fetchFlashcard(); // Fetch a new flashcard
+    };
+
+    if (!flashcard || isLoading) {
+        return <div>Loading...</div>;
+    }
 
     return (
-        <Card className="w-full max-w-3xl mb-8 mx-auto p-6 bg-card rounded-md shadow relative">
+        <Card className="w-full border-2 max-w-3xl mb-8 mx-auto p-6 bg-card rounded-md shadow relative">
             <CardHeader>
-                <CardTitle>{title}</CardTitle>
-                <CardDescription>{subtitle}</CardDescription>
+                <CardTitle>{flashcard.topic}</CardTitle>
+                <CardDescription>{flashcard.title}</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className={`card-content ${isFlipped ? 'is-flipped' : ''}`}>
                     {/* Card Front */}
                     <div className="card-front rounded">
-                        <p>{description}</p>
+                        <p>{flashcard.description}</p>
                     </div>
 
                     {/* Card Back */}
                     <div className="card-back rounded">
-                        <p>{answer}</p>
+                        <p>{flashcard.answer}</p>
                     </div>
                 </div>
 
                 <CardFooter className="flex justify-between">
-                    <Button className="rounded p-4">Next</Button>
-                    <Button onClick={flipCard} className="rounded p-4">Flip</Button>
+                    <Button onClick={handleNextClick} className="w-20 rounded p-4">Next</Button>
+                    <Button onClick={flipCard} className="w-20 rounded p-4">Flip</Button>
                 </CardFooter>
             </CardContent>
         </Card>
