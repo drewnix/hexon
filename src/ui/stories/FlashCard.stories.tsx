@@ -4,6 +4,7 @@ import type { Meta } from '@storybook/react';
 
 
 const meta: Meta<typeof FlashCard> = {
+  title: 'drewnix.dev/FlashCard',
   component: FlashCard,
 };
 
@@ -11,16 +12,16 @@ export default meta;
 
 // Named export for each story
 export const Default = () => (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <FlashCard
-            topic="Hodgepodge"
+            topic={"Literature"}
         />
     </ThemeProvider>
 );
 
 export const Mathematics = () => (
     <FlashCard
-        topic="Problems"
+        topic={"Mathematics"}
     />
 );
 
@@ -30,8 +31,8 @@ export const Geography = () => (
     />
 );
 
-export const History = () => (
+export const Politics = () => (
     <FlashCard
-        topic="US Presidents"
+        topic={"Politics"}
     />
 );

@@ -1,6 +1,6 @@
 // FlashCard.tsx
 import {useState, useEffect} from 'react';
-import { getFlashcard } from '../apiService';
+import { getFlashcard } from '@/apiService';
 
 
 import {Button} from "@/components/ui/button"
@@ -24,7 +24,7 @@ interface Flashcard {
     topic: string;
 }
 
-function FlashCard({ topic }: FlashCardProps) {
+function FlashCard({ topic = 'All' }: FlashCardProps) {
     const [flashcard, setFlashcard] = useState<Flashcard | null>(null);
     const [isFlipped, setIsFlipped] = useState(false);
     const [isLoading, setIsLoading] = useState(false); // New state to track loading
@@ -34,7 +34,10 @@ function FlashCard({ topic }: FlashCardProps) {
         setIsLoading(true); // Start loading
 
         try {
-            const data = await getFlashcard(topic);
+            const data = topic === "All"
+                ? await getFlashcard()
+                : await getFlashcard(topic)
+
             setIsFlipped(false); // Reset flip state here
             setFlashcard(data);
         } catch (error) {

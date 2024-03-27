@@ -5,7 +5,7 @@ import type { Meta } from '@storybook/react';
 
 
 const meta: Meta<typeof TopicSelect> = {
-  title: 'Components/TopicSelect',
+  title: 'drewnix.dev/TopicSelect',
   component: TopicSelect,
 };
 

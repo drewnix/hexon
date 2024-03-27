@@ -27,16 +27,16 @@ interface TopicSelectProps {
 
 export function TopicSelect({ selectedTopic, setSelectedTopic }: TopicSelectProps) {
 
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = useState(false)
     const [isLoading, setIsLoading] = useState(false); // New state to track loading
-    const [topics, setTopics] = React.useState([])
+    const [topics, setTopics] = useState(['All'])
 
     const fetchTopics = async () => {
         setIsLoading(true); // Start loading
 
         try {
             const data = await getTopics();
-            setTopics(data);
+            setTopics(['All', ...data]);
         } catch (error) {
             console.error('Error fetching flashcard:', error);
         } finally {

@@ -2,9 +2,13 @@
 
 const BASE_URL = 'http://localhost:8000/api'; // Adjust this to your API's URL
 
-const getFlashcard = async (topic: string) => {
+const getFlashcard = async (topic?: string) => {
     try {
-        const response = await fetch(`${BASE_URL}/card/?topic=${encodeURIComponent(topic)}`)
+        const url = topic
+            ? `${BASE_URL}/card/?topic=${encodeURIComponent(topic)}`
+            : `${BASE_URL}/card/`;
+
+        const response = await fetch(url)
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
